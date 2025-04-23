@@ -23,4 +23,8 @@ def simulated_annealing(f, x, T, t, k_max):
             x_current, y_current = x_new, y_new
         if y_new < y_best:
             x_best, y_best = x_new, y_new
+        if k%50 == 0:
+            print(f"k = {k}")
+            print(x_best)
+            print(y_best)
     return x_best

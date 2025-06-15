@@ -1,6 +1,10 @@
-Doug McDermott
-Caleb Houstan
-Matt Ryan
-Marcus Morris
-Ben Sheppard
-A.J. Green
+"Doug McDermott",
+"Caleb Houstan",
+"Matt Ryan",
+"Marcus Morris",
+"Ben Sheppard",
+"A.J. Green",
+"Max Christie",
+"Alec Burks",
+"Goga Bitadze",
+"Jaxson Hayes"

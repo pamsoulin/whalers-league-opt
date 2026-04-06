@@ -10,8 +10,9 @@ class Selection:
         self.selection_df = selection_df
         self.full_roster_df = full_roster_df
 
+    #come up with better way to sort roster to make comparison easier (by position and then by name alphabetically?)
     def __str__(self):
-        return str(self.selection_df)
+        return str(self.selection_df.sort_index())
     
     def copy(self):
         return Selection(self.selection_df, self.full_roster_df)
@@ -68,7 +69,6 @@ class Selection:
             (available_players_df['position'].isin(possible_positions))
         # maybe just return names to make it more consistent with possible swaps?
         return available_players_df[possible_players_mask]
-        
 
 
     def add_player(self, name) -> None:
